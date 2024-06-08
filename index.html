@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豬豬簽-iOS端IPA簽名工具</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="keywords" content="豬豬簽，無憂簽， 全能簽， 輕鬆簽， gbox，免費簽名工具，iOS免費簽名工具，簽名工具，iOS調試工具， 萬能簽， 簽名證書， p12證書， 多開， 蘋果app多開， iOS真機測試， Lin Lin網路驗證， 台灣Lin Lin網路， Lin Lin">
+    
+    <script>
+        // 禁用右键菜单、F12和开发者工具快捷键
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        }, false);
+
+        document.addEventListener('keydown', function (e) {
+            // 禁用 F12、Ctrl+Shift+I、Ctrl+Shift+J、Ctrl+Shift+C、Ctrl+U
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) || (e.ctrlKey && e.key === 'U')) {
+                e.preventDefault();
+            }
+        }, false);
+
+        // 禁止复制内容和选择文本
+        document.addEventListener('copy', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('selectstart', function (e) {
+            e.preventDefault();
+        });
+
+        // 监听浏览器模式切换，例如开启响应式设计模式
+        var devtools = function () {};
+        devtools.toString = function () {
+            this.opened = (this.opened === true) ? false : true;
+        };
+        console.log('%c', devtools);
+    </script>
+    
+</head>
+
+<body>
+    <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script><!--!‭‪‏‭‬‬‭‬‫‭‫‭‭‬‪‬‏‭‫‭‬‬‏‪-->
+ <script>
+// swal('须知','本工具完全免费\n禁止签名外挂辅助等其他违法违规APP\n若不遵守于本软件无关\n出售iOS网络验证会员系统\n支持在线解绑，兑换码激活！\n\n 主营iOS签名工具贴牌\n定制个人P12证书\n越狱插件-ipa卡密验证','success'); function AddFavorite(title, url) {
+//   try {
+//       window.external.addFavorite(url, title);
+//   }
+// catch (e) {
+//      try {
+//       window.sidebar.addPanel(title, url,);
+//     }
+//      catch (e) {
+//          alert("抱歉，您所使用的浏览器无法完成此操作。");
+//      }
+//   }
+// }
+</script>
+    <div class="aki-main">
+        <div class="container">
+            <div class="top">
+                <div class="img">
+                    <img src="./images/wnqapplogo.png" alt="" />
+                </div>
+                <h2>豬豬簽</h2>
+                <p class="ts">一款適用於 iOS 端 IPA 的簽名注入開發調試工具</p>
+                <p class="des">支援應用無限多開一鍵注入移除外掛程式庫等</p>
+            </div>
+            <div class="bottom move-up">
+                <div class="img">
+                    <img src="./images/ssmsdl.png" alt="" />
+                </div>
+                <p class="des">豬豬簽技術客服：<a href="https://www.instagram.com/lol_vavav">聯絡我們</a></p>
+                <a href="./html/123.html" class="btn"> 进入官网 </a>
+                <div class="cop">
+                    <img src="./images/gwab.png"><a href="" target="_blank">豬豬簽唯一網站</a>
+                    <br>Copyright © 2018-2024 Lin Lin
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
